@@ -52,6 +52,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.aqidah', {
+      url: "/aqidah",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/aqidah.html",
+          controller: 'AqidahCtrl'
+        }
+      }
+    })
+
+    .state('app.akidah', {
+      url: "/aqidah/:aqidahId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/akidah.html",
+          controller: 'AkidahCtrl'
+        }
+      }
+    })
+
     .state('app.single', {
       url: "/playlists/:playlistId",
       views: {
